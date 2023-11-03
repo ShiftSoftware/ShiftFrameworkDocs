@@ -17,6 +17,11 @@ nav:
     - Home: 'index.md'
     - Project Setup:
         - Overview: 'project-setup/overview.md'
+        - Shared Project:
+            - Dependencies: 'project-setup/shared-project/dependencies.md'
+            - DTOs:         'project-setup/shared-project/dtos.md'
+            - Enums:        'project-setup/shared-project/enums.md'
+            - Action Trees: 'project-setup/shared-project/action-trees.md'
 extra_css:
   - overrides/css/extra.css
 extra:

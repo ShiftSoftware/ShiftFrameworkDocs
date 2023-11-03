@@ -35,10 +35,10 @@ StockPlusPlus
 │   ├── Startup.cs
 │ 
 ├─ StockPlusPlus.Shared
+│   ├── ActionTrees
 │   ├── Constants
 │   ├── DTOs
 │   ├── Enums
-│   ├── ReplicationModels
 │ 
 ├─ StockPlusPlus.Test
 ├─ StockPlusPlus.Web
