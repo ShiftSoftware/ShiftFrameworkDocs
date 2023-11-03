@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+
+{% block htmltitle %}
+<title>{{config.site_name}}</title>
+{% endblock %}
+
+{% block tabs %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<style>
+    /*.md-main {
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1123 258'><path d='M1124,2c0,0 0,256 0,256l-1125,0l0,-48c0,0 16,5 55,5c116,0 197,-92 325,-92c121,0 114,46 254,46c140,0 214,-167 572,-166Z' style='fill: hsla(0, 0%, 100%, 1)' /></svg>") no-repeat bottom,linear-gradient(to bottom,var(--md-primary-fg-color),var(--md-primary-fg-color--light) 99%,var(--md-default-bg-color) 99%);
+        padding-top: 1rem
+    }*/
+</style>
+
+<div style="background: black;position: fixed;top: -200px;right: 375px;height: 200%;width: 202px;opacity: 0.1;transform: rotate(35deg); z-index:-100;" src="assets/images/shift-full.png"></div>
+
+<section class="">
+    <div class="">
+        <div class="">
+            <div class="">
+
+            </div>
+            <div class="" style="padding-top:40px;">
+                <img style="width:500px;" src="assets/images/shift-full.png"/>
+                <h3 style="margin:0; font-weight:400; margin-bottom:50px;">
+                    Custom Software & Professional Consultation
+                </h3>
+
+                <p style="max-width:600px; margin-bottom:50px;">We are motivated by Art, Engineering, and Science. And we practice these values when working on software development. Software is our craft, and the path to mastery is our journey.</p>
+                <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
+                    About Us
+                </a>
+                <!--<a href="{{ 'clients' | url }}" title="Clients" class="md-button">
+                    Clients
+                </a>-->
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+    {{ super() }}
+{% endblock %}

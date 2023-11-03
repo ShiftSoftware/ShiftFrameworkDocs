@@ -1,0 +1,54 @@
+site_name: Shift Framework
+repo_url: https://github.com/ShiftSoftware/ShiftFrameworkDocs
+repo_name: ShiftSoftware/ShiftFrameworkDocs
+site_author: Shift Software
+edit_uri: ShiftFrameworkDocs/edit/master/docs/
+copyright: Copyright &copy; Shift Software
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: assets/images/logo.png
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - content.code.copy
+    - navigation.collapse
+nav:
+    - Home: 'index.md'
+    - Project Setup:
+        - Overview: 'project-setup/overview.md'
+extra_css:
+  - overrides/css/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/ShiftSoftware
+    - icon: fontawesome/brands/instagram 
+      link: https://www.instagram.com/shift.software
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/shift-software
+    - icon: fontawesome/brands/facebook 
+      link: https://www.facebook.com/the.shift.software
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - pymdownx.mark
+  - toc:
+      permalink: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true

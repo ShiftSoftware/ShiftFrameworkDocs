@@ -1,0 +1,12 @@
+:root > * {
+    --md-primary-fg-color: #f8cb4c;
+    --md-primary-fg-color--light: #fbdb84;
+    --md-primary-fg-color--dark: #f0b81c;
+    --md-accent-fg-color: #f0b81c;
+    --md-primary-bg-color: #000;
+    --md-typeset-a-color: #f0b81c;
+}
+
+table code {
+    white-space: nowrap;
+}
