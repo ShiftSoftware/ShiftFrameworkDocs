@@ -22,6 +22,13 @@ nav:
             - DTOs:         'project-setup/shared-project/dtos.md'
             - Enums:        'project-setup/shared-project/enums.md'
             - Action Trees: 'project-setup/shared-project/action-trees.md'
+        - Data Project:
+            - Dependencies:             'project-setup/data-project/dependencies.md'
+            - Entities :                'project-setup/data-project/entities.md'
+            - AutoMapper Profiles:      'project-setup/data-project/auto-mapper-profiles.md'
+            - DB Context:               'project-setup/data-project/db-context.md'
+            - Migrations:               'project-setup/data-project/migrations.md'
+        
 extra_css:
   - overrides/css/extra.css
 extra:
