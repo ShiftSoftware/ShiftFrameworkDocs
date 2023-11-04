@@ -5,6 +5,8 @@
     --md-accent-fg-color: #f0b81c;
     --md-primary-bg-color: #000;
     --md-typeset-a-color: #f0b81c;
+    --md-code-hl-color--light: #f4433621;
+    --md-code-hl-color: black;
 }
 
 table code {
