@@ -47,6 +47,10 @@ public enum TrackingMethod
 }
 ```
 
+!!! note
+    The `Describe` extension method can be used on enum values to read the description string.
+    `TrackingMethod.NoTracking.Describe()`
+
 ## JsonConverter Attribute
 When Enums are used in DTOs, They need to be decorated by **[JsonConverter(typeof(JsonStringEnumConverter))]** attribute.
 
