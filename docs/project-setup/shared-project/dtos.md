@@ -43,12 +43,12 @@ public class ProductCategoryListDTO : ShiftEntityListDTO
 }
 ```
 
-## Upsert DTO
+## View & Upsert DTO
 
-An upsert DTO is used for Insrting, Viewing, and Updating a single entity.  
-It must inherit from **`ShiftEntityDTO`** class.  
+A view & upsert DTO is used for Insrting, Viewing, and Updating a single entity.  
+It must inherit from **`ShiftEntityViewAndUpsertDTO`** class.  
 ```C# hl_lines="1"
-public class ProductCategoryDTO : ShiftEntityDTO
+public class ProductCategoryDTO : ShiftEntityViewAndUpsertDTO
 {
     [_ProductCategoryHashId]
     public override string? ID { get; set; }

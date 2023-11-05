@@ -1,13 +1,12 @@
 Depending on your Shift Identity setup, The following DB Contexts are available: **``ShiftDbContext``** and **``ShiftIdentityDbContext``**.
 
-```hl_lines="11"
+```hl_lines="10"
 StockPlusPlus
 |
 ├─ StockPlusPlus.API
 ├─ StockPlusPlus.Data
 │   ├── AutoMapperProfiles
 │   ├── Entities
-│       ├── Brand.cs
 │   ├── Migrations
 │   ├── ReplicationModels
 │   ├── Repositories

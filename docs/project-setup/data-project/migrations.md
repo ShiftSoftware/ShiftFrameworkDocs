@@ -1,12 +1,11 @@
 
-```hl_lines="8"
+```hl_lines="7"
 StockPlusPlus
 |
 ├─ StockPlusPlus.API
 ├─ StockPlusPlus.Data
 │   ├── AutoMapperProfiles
 │   ├── Entities
-│       ├── Brand.cs
 │   ├── Migrations
 │   ├── ReplicationModels
 │   ├── Repositories

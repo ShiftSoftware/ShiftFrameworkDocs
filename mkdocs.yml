@@ -28,6 +28,7 @@ nav:
             - AutoMapper Profiles:      'project-setup/data-project/auto-mapper-profiles.md'
             - DB Context:               'project-setup/data-project/db-context.md'
             - Migrations:               'project-setup/data-project/migrations.md'
+            - Repositories:             'project-setup/data-project/repositories.md'
         
 extra_css:
   - overrides/css/extra.css
