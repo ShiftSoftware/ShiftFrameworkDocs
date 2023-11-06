@@ -55,6 +55,8 @@ var createdBrand = await this.brandRepository.UpsertAsync(
     userId: null
 );
 
+this.brandRepository.Add(createdBrand);
+
 await this.brandRepository.SaveChangesAsync();
 ```
 
