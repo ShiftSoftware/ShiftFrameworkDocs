@@ -6,7 +6,7 @@ StockPlusPlus
 ├─ StockPlusPlus.Data		<--- (.NET 6 Class Library)
 ├─ StockPlusPlus.Functions	<--- (.NET 6 Azure Functions)
 ├─ StockPlusPlus.Shared		<--- (.NET 6 Class Library)
-├─ StockPlusPlus.Test		<--- (.NET 6 Class Library)
+├─ StockPlusPlus.Test		<--- (.NET 7 xUnit Test Project)
 ├─ StockPlusPlus.Web		<--- (.NET 7 Blazor WASM)
 ```
 
@@ -20,6 +20,7 @@ StockPlusPlus
 │   ├── Controllers
 │   ├── appsettings.json
 │   ├── Program.cs
+│   ├── WebMarker.cs
 │ 
 ├─ StockPlusPlus.Data
 │   ├── AutoMapperProfiles
