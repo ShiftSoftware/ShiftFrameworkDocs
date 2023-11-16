@@ -82,3 +82,27 @@ public class _ProductCategoryHashId :
 !!! note
     **`base(5)`** is setting the minimum length of the Hash ID.  
     This will change the IDs to random looking strings like (**`0W8y9`**, **`GVApJ`**) by using [**Hashids.net**](https://www.nuget.org/packages/Hashids.net) under the hood.
+
+
+## Shift Entity Key And Name
+There are certain features in the Framework that requires you to specify a Key and Name property for entities and DTOs.  
+
+This can be specified using the **``ShiftEntityKeyAndName``** attribute.
+
+```C# hl_lines="1"
+[ShiftEntityKeyAndName(nameof(ID), nameof(Name))]
+public class ProductCategoryListDTO : ShiftEntityListDTO
+{
+    [_ProductCategoryHashId]
+    public override string? ID { get; set; }
+
+    public string Name { get; set; } = default!;
+
+    public string? Description { get; set; }
+
+    public string? Code { get; set; }
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public TrackingMethod? TrackingMethod { get; set; }
+}
+```

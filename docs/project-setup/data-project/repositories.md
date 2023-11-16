@@ -24,14 +24,13 @@ A simple repository can be created by inheriting from
 **``ShiftRepository<DB, Entity, ListDTO, ViewAndUpsertDTO>``**
 
 ```C#
-using AutoMapper;
 using ShiftSoftware.ShiftEntity.EFCore;
 using StockPlusPlus.Shared.DTOs.Product.Brand;
 
 public class BrandRepository : 
     ShiftRepository<DB, Entities.Product.Brand, BrandListDTO, BrandDTO>
 {
-    public BrandRepository(DB db, IMapper mapper) : base(db, db.Brands, mapper)
+    public BrandRepository(DB db) : base(db)
     {
     }
 }
@@ -131,7 +130,7 @@ The base constructor of the ShiftRepository accepts an action for configuring **
 The **``IncludeRelatedEntitiesWithFindAsync``** method can be used to include one or more related entities.
 
 ```C#
-public ProductRepository(DB db, IMapper mapper) :base(db, db.Products, mapper, 
+public ProductRepository(DB db) :base(db, 
     x => x.IncludeRelatedEntitiesWithFindAsync(
         y => y.Include(z => z.Brand),
         y => y.Include(z => z.ProductCategory)
