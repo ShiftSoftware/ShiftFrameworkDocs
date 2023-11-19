@@ -35,6 +35,8 @@ nav:
             - Test Case Orderer:                          'project-setup/test-project/test-case-orderer.md'
             - Custom Web Application Factory:             'project-setup/test-project/custom-web-application-factory.md'
             - Collection Fixture:                         'project-setup/test-project/collection-fixture.md'
+    - TypeAuth:
+            - Intro: 'type-auth/intro.md'
         
 extra_css:
   - overrides/css/extra.css
