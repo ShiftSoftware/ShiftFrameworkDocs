@@ -39,6 +39,8 @@ nav:
             - Dependencies:                               'project-setup/api-project/dependencies.md'
             - Setup & Configurations:                     'project-setup/api-project/setup-and-configurations.md'
             - Program.cs Example:                         'project-setup/api-project/program.cs.md'
+    - TypeAuth:
+            - Intro: 'type-auth/intro.md'
         
 extra_css:
   - overrides/css/extra.css
