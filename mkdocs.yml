@@ -35,6 +35,10 @@ nav:
             - Test Case Orderer:                          'project-setup/test-project/test-case-orderer.md'
             - Custom Web Application Factory:             'project-setup/test-project/custom-web-application-factory.md'
             - Collection Fixture:                         'project-setup/test-project/collection-fixture.md'
+        - API Project:
+            - Dependencies:                               'project-setup/api-project/dependencies.md'
+            - Setup & Configurations:                     'project-setup/api-project/setup-and-configurations.md'
+            - Program.cs Example:                         'project-setup/api-project/program.cs.md'
         
 extra_css:
   - overrides/css/extra.css

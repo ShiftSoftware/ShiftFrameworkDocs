@@ -39,6 +39,9 @@ ShiftSoftware.ShiftEntity.EFCore
 ```
 ShiftSoftware.ShiftIdentity.Data
 ```
+
+!!! warning
+	**``ShiftSoftware.ShiftIdentity.Data``** is only required if Shift Identity is included in your app. If you're using an External Shift Identity then no need to install this package.
    
 Available as nuget packages:   
 [**ShiftSoftware.ShiftEntity.EFCore**](https://www.nuget.org/packages/ShiftSoftware.ShiftEntity.EFCore)
