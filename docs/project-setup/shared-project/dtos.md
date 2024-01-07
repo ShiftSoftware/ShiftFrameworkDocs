@@ -69,9 +69,14 @@ public class ProductCategoryDTO : ShiftEntityViewAndUpsertDTO
 ```
 
 ## Hash ID Attribute
+Sometimes it is required to hash an integer value into a random alphanumeric short string. This is mostly helpful when you need to obfesucate incremental IDs so they are not easy to guess.
 
-Notice how the ID field in the DTOs are decorated with the **`[_ProductCategoryHashId]`** attribute.
-This can be used to obfuscate the ID of the entity. The attribute can be created by inheriting from **`JsonHashIdConverterAttribute<T>`**
+Since hashing requires the same salt for encoding and dycoding, we need to keep track of the salt for each hashed ID. This is maintianed by adding a unique custom attribute to the ID property in every DTO it is referenced.
+
+As the attributes will actually provide the salt to the hashing mechanism, and in order for IDs from different entities to have their own hasing, we use different attribute classes for each ID.
+
+In the examples above ID field in the DTOs are decorated with the **`[_ProductCategoryHashId]`** attribute. This will obfuscate the ID of the entity.
+The attribute can be created by inheriting from **`JsonHashIdConverterAttribute<T>`**
 
 ```C# hl_lines="2"
 public class _ProductCategoryHashId :
@@ -85,6 +90,8 @@ public class _ProductCategoryHashId :
     **`base(5)`** is setting the minimum length of the Hash ID.
     This will change the IDs to random looking strings like (**`0W8y9`**, **`GVApJ`**) by using [**Hashids.net**](https://www.nuget.org/packages/Hashids.net) under the hood.
 
+
+Make sure that if you need to obfesucate a specific ID, you have to apply the hash attribute to that ID in every DTO using it, whether as a primary or foriegn key.
 
 ## Shift Entity Key And Name
 There are certain features in the Framework that require you to specify a Key and Name property for entities and subsequently their DTOs.
