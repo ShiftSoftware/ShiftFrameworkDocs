@@ -94,9 +94,11 @@ public class _ProductCategoryHashId :
 Make sure that if you need to obfesucate a specific ID, you have to apply the hash attribute to that ID in every DTO using it, whether as a primary or foriegn key.
 
 ## Shift Entity Key And Name
-There are certain features in the Framework that require you to specify a Key and Name property for entities and subsequently their DTOs.
+There are certain features in the Framework that requires you to specify a Key and Name property for entities and DTOs. In many places, especially in UI, we need to present the entities in a list (such as select or atuocomplete elements), and in which cases we only need to use two properties: one for the key (value), and the other for the display (text).
 
-This can be specified using the **``ShiftEntityKeyAndName``** attribute.
+This can be specified using the **``ShiftEntityKeyAndName``** attribute. This attribute simply tells which property should be used as key and which should be used as a display name.
+
+The attribute accepts exactly two parameters: the first parameter is the key (value) and the second is the name (text). Here is how you set it:
 
 ```C# hl_lines="1"
 [ShiftEntityKeyAndName(nameof(ID), nameof(Name))]
@@ -114,4 +116,14 @@ public class ProductCategoryListDTO : ShiftEntityListDTO
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public TrackingMethod? TrackingMethod { get; set; }
 }
+```
+
+Once we define the entity's key and name through ShiftEntityKeyAndName attribute, we can use that entity later in UI elements without explicitly specifiying those fields:
+
+```C#
+    <ShiftAutocomplete Label="Brand"
+                       @bind-Value="TheItem.Brand"
+                       TEntitySet="BrandListDTO"
+                       EntitySet="Brand"
+                       For="() => TheItem.Brand" />
 ```
