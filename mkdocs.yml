@@ -44,18 +44,24 @@ nav:
             - Setup & Configurations:                     'project-setup/web-project/setup-and-configurations.md'
     - TypeAuth:
             - Intro: 'type-auth/intro.md'
-        
+    - Quick Start:
+            - Create Data Project:                        'quick-start/create-data-project.md'
+            - Create Entity:                              'quick-start/create-entity.md'
+            - Create Shared Project:                      'quick-start/create-shared-project.md'
+            - Create DTOs:                                'quick-start/create-dtos.md'
+            - Create Automapper Profile:                  'quick-start/create-automapp-profile.md'
+            - Create DB Context:                          'quick-start/dbcontext.md'
 extra_css:
   - overrides/css/extra.css
 extra:
   social:
-    - icon: fontawesome/brands/github 
+    - icon: fontawesome/brands/github
       link: https://github.com/ShiftSoftware
-    - icon: fontawesome/brands/instagram 
+    - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/shift.software
-    - icon: fontawesome/brands/linkedin 
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/shift-software
-    - icon: fontawesome/brands/facebook 
+    - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/the.shift.software
 
 markdown_extensions:
