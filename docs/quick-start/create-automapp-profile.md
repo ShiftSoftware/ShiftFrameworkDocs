@@ -1,4 +1,4 @@
-1. To make DTOs avaialable in Data project, add a reference to Shared project. To do this right-click StockPlusPlus project and select `Add -> Project Reference` and from the dialog select **StockPlusPlus.Shared**
+1. To make DTOs avaialable in Data project, add a reference to Shared project. To do this right-click StockPlusPlus.Data project and select `Add -> Project Reference` and from the dialog select **StockPlusPlus.Shared**
 
     ![Screen 1](/quick-start/images/Data-3.png)
 

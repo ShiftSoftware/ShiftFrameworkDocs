@@ -50,8 +50,11 @@ nav:
             - Create Shared Project:                      'quick-start/create-shared-project.md'
             - Create DTOs:                                'quick-start/create-dtos.md'
             - Create Automapper Profile:                  'quick-start/create-automapp-profile.md'
-            - Create DB Context:                          'quick-start/dbcontext.md'
             - Create Repository:                          'quick-start/create-repository.md'
+            - Create DB Context:                          'quick-start/dbcontext.md'
+            - Create API Project:                         'quick-start/create-api-project.md'
+            - Configure API Project:                      'quick-start/configure-api.md'
+            - Create Migration:                           'quick-start/create-migration.md'
 extra_css:
   - overrides/css/extra.css
 extra:
