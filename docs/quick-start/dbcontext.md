@@ -1,4 +1,4 @@
-1. Create DB context file as follows
+1. In Data project "StockPlusPlus.Data" create DB context class in root directory.
 2. Make sure to inherit from **ShiftDbContext**
 3. Declare the Brand DBSet as follows:
 
@@ -10,7 +10,7 @@ using StockPlusPlus.Data.Entities.Product;
 
 namespace StockPlusPlus.Data
 {
-    internal class DB : ShiftDbContext
+    public class DB : ShiftDbContext
     {
         public DB(DbContextOptions option) : base(option)
         {

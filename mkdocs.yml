@@ -51,6 +51,7 @@ nav:
             - Create DTOs:                                'quick-start/create-dtos.md'
             - Create Automapper Profile:                  'quick-start/create-automapp-profile.md'
             - Create DB Context:                          'quick-start/dbcontext.md'
+            - Create Repository:                          'quick-start/create-repository.md'
 extra_css:
   - overrides/css/extra.css
 extra:
