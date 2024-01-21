@@ -55,6 +55,10 @@ nav:
             - Create API Project:                         'quick-start/create-api-project.md'
             - Configure API Project:                      'quick-start/configure-api.md'
             - Create Migration:                           'quick-start/create-migration.md'
+            - Create Controller:                          'quick-start/create-controller.md'
+            - Create Web Project:                         'quick-start/create-web-project.md'
+            - Configure Web Project:                      'quick-start/configure-web.md'
+            - Setup Index Page:                           'quick-start/setup-index.md'
 extra_css:
   - overrides/css/extra.css
 extra:
